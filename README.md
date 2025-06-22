@@ -7,7 +7,7 @@ A tiny zero-waste kitchen planner: track pantry items, get expiry alerts, and di
 ## 🚀 Quick start
 
 ```bash
-git clone https://github.com/YOUR-USERNAME/pantrypal
+git clone https://github.com/abutler911/pantrypal
 cd pantrypal
 npm run setup   # installs all workspaces
 npm run dev     # client @ 5173, API @ 5000
