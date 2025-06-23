@@ -8,7 +8,7 @@
     "dev": "nodemon app.js",
     "start": "node app.js",
     "lint": "eslint . --ext .js,.mjs",
-    "test": "jest --runInBand"
+    "test": "jest --runInBand --passWithNoTests"
   },
   "keywords": [
     "pantry",
