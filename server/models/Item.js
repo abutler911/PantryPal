@@ -55,7 +55,7 @@ itemSchema.pre("save", function (next) {
 
 itemSchema.methods.getDaysUntilExpiration = function () {
   const today = new Date();
-  const ation = new Date(this.expirationDate);
+  const expiration = new Date(this.expirationDate);
   const diffTime = expiration - today;
   return Math.ceil(diffTime / (1000 * 60 * 60 * 24));
 };
