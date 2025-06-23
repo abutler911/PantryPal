@@ -55,8 +55,8 @@ itemSchema.pre("save", function (next) {
 
 itemSchema.pre("findOneAndUpdate", function (next) {
   const update = this.getUpdate();
-  if (update.expiryDate) {
-    update.isExpired = update.expiryDate < new Date();
+  if (update.expirationDate) {
+    update.isExpired = update.expirationDate < new Date();
   }
   next();
 });
