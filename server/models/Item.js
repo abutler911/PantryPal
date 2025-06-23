@@ -30,9 +30,9 @@ const itemSchema = new mongoose.Schema(
       type: String,
       default: "piece",
     },
-    expiryDate: {
+    expirationDate: {
       type: Date,
-      required: [true, "Expiry date is required"],
+      required: [true, "Expiration date is required"],
     },
     location: {
       type: String,
@@ -49,14 +49,14 @@ const itemSchema = new mongoose.Schema(
 );
 
 itemSchema.pre("save", function (next) {
-  this.isExpired = this.expiryDate < new Date();
+  this.isExpired = this.expirationDate < new Date();
   next();
 });
 
-itemSchema.methods.getDaysUntilExpiry = function () {
+itemSchema.methods.getDaysUntilExpiration = function () {
   const today = new Date();
-  const expiry = new Date(this.expiryDate);
-  const diffTime = expiry - today;
+  const ation = new Date(this.expirationDate);
+  const diffTime = expiration - today;
   return Math.ceil(diffTime / (1000 * 60 * 60 * 24));
 };
 

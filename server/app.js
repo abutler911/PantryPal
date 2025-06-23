@@ -4,7 +4,7 @@ import helmet from "helmet";
 import mongoose from "mongoose";
 import dotenv from "dotenv";
 import itemsRouter from "./routes/items.js";
-import recipesRouter from "./routes/recipes.js";
+// import recipesRouter from "./routes/recipes.js";
 
 dotenv.config();
 
@@ -46,7 +46,7 @@ if (process.env.NODE_ENV !== "production") {
 }
 
 app.use("/api/items", itemsRouter);
-app.use("/api/recipes", recipesRouter);
+// app.use("/api/recipes", recipesRouter);
 
 app.get("/", (_, res) => {
   res.json({
@@ -66,7 +66,6 @@ app.use("*", (req, res) => {
 
 app.use((error, req, res, next) => {
   console.error("Error:", error.stack);
-
   res.status(error.status || 500).json({
     success: false,
     message: error.message || "Internal Server Error",
@@ -74,31 +73,25 @@ app.use((error, req, res, next) => {
   });
 });
 
-const gracefulShutdown = (signal) => {
-  console.log(`\nReceived ${signal}. Shutting down gracefully...`);
-
-  const server = app.listen(PORT, () => {
-    console.log(`Server listening on port ${PORT}`);
-    console.log(`Environment: ${process.env.NODE_ENV || "development"}`);
-  });
-
-  process.on(signal, () => {
-    server.close(() => {
-      console.log("Server closed");
-      mongoose.connection.close(false, () => {
-        console.log("MongoDB connection closed");
-        process.exit(0);
-      });
-    });
-  });
-};
-
-["SIGTERM", "SIGINT"].forEach(gracefulShutdown);
-
 const server = app.listen(PORT, () => {
   console.log(`🚀 Server listening on port ${PORT}`);
   console.log(`📁 Environment: ${process.env.NODE_ENV || "development"}`);
   console.log(`🌐 API Base URL: http://localhost:${PORT}`);
+});
+
+const gracefulShutdown = (signal) => {
+  console.log(`\nReceived ${signal}. Shutting down gracefully...`);
+  server.close(() => {
+    console.log("Server closed");
+    mongoose.connection.close(false, () => {
+      console.log("MongoDB connection closed");
+      process.exit(0);
+    });
+  });
+};
+
+["SIGTERM", "SIGINT"].forEach((sig) => {
+  process.on(sig, () => gracefulShutdown(sig));
 });
 
 export default app;
