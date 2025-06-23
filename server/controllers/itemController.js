@@ -90,10 +90,10 @@ export const getExpiringItems = async (req, res) => {
     threeDaysFromNow.setDate(threeDaysFromNow.getDate() + 3);
 
     const items = await Item.find({
-      expirationDate: { $lte: threeDaysFromNow },
+      expirationDate: { $gte: new Date(), $lte: threeDaysFromNow },
     }).sort({ expirationDate: 1 });
 
-    res.json({
+    res.status(200).json({
       success: true,
       count: items.length,
       data: items,

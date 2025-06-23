@@ -53,6 +53,14 @@ itemSchema.pre("save", function (next) {
   next();
 });
 
+itemSchema.pre("findOneAndUpdate", function (next) {
+  const update = this.getUpdate();
+  if (update.expiryDate) {
+    update.isExpired = update.expiryDate < new Date();
+  }
+  next();
+});
+
 itemSchema.methods.getDaysUntilExpiration = function () {
   const today = new Date();
   const expiration = new Date(this.expirationDate);
