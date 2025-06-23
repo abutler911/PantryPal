@@ -64,7 +64,7 @@ app.use("*", (req, res) => {
   });
 });
 
-app.use((error, req, res, next) => {
+app.use((error, req, res) => {
   console.error("Error:", error.stack);
   res.status(error.status || 500).json({
     success: false,
