@@ -1,6 +1,6 @@
 # Contributing to PantryPal 🥫
 
-Thank you for considering contributing to PantryPal! We're excited to have you help us build a better zero-waste kitchen planner.
+Thank you for considering contributing to PantryPal! We're excited to have you help us build a better zero-waste kitchen planner. If an issue is labelled 'good first issue', feel free to comment "I'd like to work on this!" - we'll assign it to you.
 
 ## 🚀 Getting Started
 
