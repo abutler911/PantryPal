@@ -1,5 +1,13 @@
+// App.js
+import { Routes, Route } from "react-router-dom";
+import LandingPage from "./LandingPage";
+
 function App() {
-  return <h1 className="text-3xl font-bold uppercase">Hello PantryPal</h1>;
+  return (
+    <Routes>
+      <Route path="/" element={<LandingPage />} />
+    </Routes>
+  );
 }
 
 export default App;
