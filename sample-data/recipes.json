@@ -1,0 +1,98 @@
+[
+  {
+    "title": "Peanut Butter Banana Smoothie",
+    "ingredients": [
+      { "name": "banana", "qty": 1 },
+      { "name": "peanut butter", "qty": 2, "unit": "tbsp" },
+      { "name": "milk", "qty": 250, "unit": "ml" }
+    ],
+    "instructions": "Blend everything until smooth."
+  },
+  {
+    "title": "Scrambled Eggs with Cheese",
+    "ingredients": [
+      { "name": "eggs", "qty": 2 },
+      { "name": "shredded cheese", "qty": 30, "unit": "g" },
+      { "name": "salt", "qty": 1, "unit": "pinch" }
+    ],
+    "instructions": "Beat the eggs, add salt and cheese; cook over medium heat until set."
+  },
+  {
+    "title": "Avocado Toast",
+    "ingredients": [
+      { "name": "whole grain bread", "qty": 2, "unit": "slices" },
+      { "name": "avocado", "qty": 1 },
+      { "name": "salt", "qty": 1, "unit": "pinch" },
+      { "name": "olive oil", "qty": 1, "unit": "tsp" }
+    ],
+    "instructions": "Toast the bread, mash avocado on top, add salt and drizzle with oil."
+  },
+  {
+    "title": "Tomato Cucumber Salad",
+    "ingredients": [
+      { "name": "tomato", "qty": 2 },
+      { "name": "cucumber", "qty": 1 },
+      { "name": "olive oil", "qty": 2, "unit": "tbsp" },
+      { "name": "vinegar", "qty": 1, "unit": "tbsp" },
+      { "name": "salt", "qty": 1, "unit": "pinch" }
+    ],
+    "instructions": "Chop vegetables, mix with oil, vinegar, and salt."
+  },
+  {
+    "title": "Oatmeal with Apple",
+    "ingredients": [
+      { "name": "oats", "qty": 50, "unit": "g" },
+      { "name": "milk", "qty": 200, "unit": "ml" },
+      { "name": "apple", "qty": 1 },
+      { "name": "cinnamon", "qty": 1, "unit": "tsp" }
+    ],
+    "instructions": "Boil milk, add oats; cook 5 min. Add chopped apple and cinnamon."
+  },
+  {
+    "title": "Ham and Cheese Sandwich",
+    "ingredients": [
+      { "name": "sliced bread", "qty": 2, "unit": "slices" },
+      { "name": "ham", "qty": 2, "unit": "slices" },
+      { "name": "cheese", "qty": 2, "unit": "slices" }
+    ],
+    "instructions": "Layer ham and cheese between bread slices; toast if desired."
+  },
+  {
+    "title": "Yogurt with Honey and Walnuts",
+    "ingredients": [
+      { "name": "plain yogurt", "qty": 1, "unit": "cup" },
+      { "name": "honey", "qty": 1, "unit": "tbsp" },
+      { "name": "walnuts", "qty": 20, "unit": "g" }
+    ],
+    "instructions": "Mix yogurt with honey and sprinkle chopped walnuts on top."
+  },
+  {
+    "title": "Pasta with Tomato and Garlic",
+    "ingredients": [
+      { "name": "dry pasta", "qty": 100, "unit": "g" },
+      { "name": "crushed tomato", "qty": 200, "unit": "g" },
+      { "name": "garlic", "qty": 1, "unit": "clove" },
+      { "name": "olive oil", "qty": 1, "unit": "tbsp" },
+      { "name": "salt", "qty": 1, "unit": "pinch" }
+    ],
+    "instructions": "Cook pasta. Meanwhile, sauté garlic in oil, add tomato and salt; mix with pasta."
+  },
+  {
+    "title": "Baked Apple with Cinnamon",
+    "ingredients": [
+      { "name": "apple", "qty": 1 },
+      { "name": "cinnamon", "qty": 1, "unit": "tsp" },
+      { "name": "honey", "qty": 1, "unit": "tbsp" }
+    ],
+    "instructions": "Slice the apple, sprinkle with cinnamon, drizzle with honey, and bake at 180°C for 20 min."
+  },
+  {
+    "title": "Strawberry Banana Shake",
+    "ingredients": [
+      { "name": "strawberries", "qty": 5 },
+      { "name": "banana", "qty": 1 },
+      { "name": "milk or yogurt", "qty": 200, "unit": "ml" }
+    ],
+    "instructions": "Blend all ingredients until smooth and creamy."
+  }
+]
