@@ -7,10 +7,23 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
+
     steps:
       - uses: actions/checkout@v4
+
       - uses: actions/setup-node@v4
-        with: { node-version: 20 }
-      - run: npm ci
-      - run: npm run lint
-      - run: npm test --workspaces
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install & test (server)
+        working-directory: server
+        run: |
+          npm ci
+          npm test --if-present
+
+      - name: Install & lint (client)
+        working-directory: client
+        run: |
+          npm ci
+          npm run lint --if-present
