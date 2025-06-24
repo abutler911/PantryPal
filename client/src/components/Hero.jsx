@@ -4,7 +4,7 @@ function Hero() {
   return (
     <main className="dark:bg-gray-900 dark:text-gray-400 min-h-screen mx-auto flex justify-center items-center">
       <div>
-        <h1 className="text-5xl text-center font-bold">Pantry Pal</h1>
+        <h1 className="text-2xl sm:text-2xl md:text-3xl lg:text-5xl text-center font-bold">Pantry Pal</h1>
         <p className="text-center py-4 text-sm font-thin">
           Stop wasting food-track, cook, save
         </p>

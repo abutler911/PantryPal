@@ -1,6 +1,6 @@
 function Footer() {
   return (
-    <footer className="flex justify-between items-center bg-gray-900 text-gray-400 px-6 min-h-[70px] py-6">
+    <footer className="flex justify-between items-center bg-gray-800 text-gray-400 px-6 min-h-[70px] py-6">
       <div>
         <ul>
           <li className="text-sm font-bold hover:text-gray-300 transition-all ease-in-out">
@@ -14,7 +14,7 @@ function Footer() {
       </div>
 
       {/* Just for resposnive test  */}
-      <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
+      <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 text-sm">
         <ul>
           <li className="hover:text-gray-300 hover:font-semibold transition-all ease-in-out">
             Contact Us
