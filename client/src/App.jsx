@@ -1,5 +1,14 @@
+import { Routes, Route } from "react-router-dom";
+import LandingPage from "./components/LandingPage";
+import Login from "./components/Login";
+
 function App() {
-  return <h1 className="text-3xl font-bold uppercase">Hello PantryPal</h1>;
+  return (
+    <Routes>
+      <Route path="/" element={<LandingPage />} />
+      <Route path="/login" element={<Login />} />
+    </Routes>
+  );
 }
 
 export default App;
