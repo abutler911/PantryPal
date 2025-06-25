@@ -14,7 +14,7 @@ function Hero() {
           <button
             type="button"
             aria-label="get started"
-            className="bg-green-600 text-white px-6 py-3 rounded-xl font-medium transition hover:bg-green-700 dark:hover:bg-green-800 focus:outline-none focus:ring-2 focus:ring-green-500 dark:focus:ring-green-400 focus:ring-offset-2"
+            className="bg-brand-green text-white px-6 py-3 rounded-xl font-medium transition hover:bg-brand-green-hover dark:hover:bg-brand-green-dark focus:outline-none focus:ring-2 focus:ring-green-500 dark:focus:ring-green-400 focus:ring-offset-2"
           >
             Get started
           </button>

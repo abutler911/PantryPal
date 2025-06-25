@@ -46,7 +46,7 @@ function FeatureCard() {
             key={card.id}
             className="flex flex-col items-center text-center border border-gray-200 dark:border-gray-700 rounded-lg p-6 bg-white dark:bg-gray-800 transition-shadow hover:shadow-md"
           >
-            <div className="text-green-600 dark:text-green-500 text-5xl mb-4">
+            <div className="text-brand-green dark:text-brand-green-dark text-5xl mb-4">
               {card.icon}
             </div>
             <h2 className="text-lg md:text-xl font-semibold mb-2 dark:text-gray-100 text-gray-900">
